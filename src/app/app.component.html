@@ -177,6 +177,9 @@
   }
 </style>
 
+<app-header></app-header>
+
+
 <main class="main">
   <div class="content">
     <div class="left-side">
@@ -334,3 +337,9 @@
 
 
 <router-outlet />
+
+
+<div class="container">
+  <app-saludo [nombre]="nombreActual"></app-saludo>
+  <button (click)="cambiarNombre()" class="btn btn-primary mt-3">Cambiar Nombre</button>
+</div>
