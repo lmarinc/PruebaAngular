@@ -3,13 +3,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SaludoComponent } from '../componentes/saludo/saludo.component';
 import {HeaderComponent} from '../componentes/header/header.component';
+import {ContadorComponent} from '../componentes/contador/contador.component';
 import {FormsModule} from '@angular/forms';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SaludoComponent, HeaderComponent, FormsModule],
+  imports: [RouterOutlet, SaludoComponent, HeaderComponent, FormsModule, ContadorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

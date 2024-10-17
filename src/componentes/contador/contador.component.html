@@ -1,0 +1,8 @@
+<div class="container text-center mt-5">
+  <h2>Hora actual:</h2>
+  <h3>{{ horaActual | date: 'HH:mm:ss' }}</h3>
+
+  <button (click)="detenerContador()" [disabled]="!corriendo" class="btn btn-danger mt-3">
+    Detener
+  </button>
+</div>
