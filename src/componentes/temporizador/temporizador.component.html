@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <h2>Temporizador</h2>
+
+
+  <div class="input-group mb-3">
+    <input [(ngModel)]="tiempoInicial" type="number" class="form-control" placeholder="Tiempo en segundos" [disabled]="corriendo" />
+    <button (click)="iniciarTemporizador()" class="btn btn-primary" [disabled]="corriendo || tiempoInicial <= 0">
+      Iniciar
+    </button>
+  </div>
+
+
+  <h3>Tiempo restante: {{ tiempoRestante }} segundos</h3>
+
+
+  <button (click)="detenerTemporizador()" class="btn btn-danger me-2" [disabled]="!corriendo">
+    Detener
+  </button>
+
+  <button (click)="reiniciarTemporizador()" class="btn btn-secondary">
+    Reiniciar
+  </button>
+</div>
+
